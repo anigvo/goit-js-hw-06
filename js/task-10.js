@@ -25,6 +25,7 @@ function onCreateButtonClick() {
 }
 
 function createBoxes(amount) {
+  boxes.innerHTML = ``;
   for (let index = 1; index <= amount; index += 1) {
     const boxSize = 20 + 10 * index;
     boxes.insertAdjacentHTML(

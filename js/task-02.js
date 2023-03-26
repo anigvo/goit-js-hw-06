@@ -13,8 +13,7 @@ const containter = document.querySelector('#ingredients');
 const markup = ingredients.map(item => {
   const li = document.createElement('li');
   const p = document.createElement('p');
-  p.textContent = item;
-  li.append(p)
+  li.textContent = item;
   li.classList.add('item');
   
   return li;

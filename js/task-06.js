@@ -7,7 +7,7 @@ function onInputBlur(event) {
         input.classList.remove(`valid`, `invalid`)
         return;
     }
-    if (input.value.length < Number(input.dataset.length)) {
+    if (input.value.length < Number(input.dataset.length) || input.value.length > Number(input.dataset.length)) {
         input.classList.remove(`valid`);
       input.classList.add(`invalid`);
       return;
